@@ -27,8 +27,10 @@ Then click `Create VPC` button
 
 Wait until all resources are created
 ![wait for creation](./static/001g-vpc-created.jpg)
+
 Can click left side menu. e.g. `VPC` menu.
 ![vpc list](./static/001h-vpc-created.jpg)
+
 or `Subnets` etc.
 ![subnet list](./static/001i-subnets-created.jpg)
 
@@ -40,12 +42,16 @@ So, `private1` and `private2` subnets can reach internet via NAT Gateway while `
 
 Let's rename subnets accordingly
 ![rename subnets](./static/001j-subnets-renamed.jpg)
+
 rename route tables as well
 ![rename route tables](./static/001k-route-tables-renamed.jpg)
+
 select the isolated route table and click `edit routes`
 ![edit routes](./static/001l-edit-routes.jpg)
+
 remove route to NAT GW
 ![remove route to NATGW](./static/001m-remove-route-to-natgw.jpg)
+
 save change
 ![save route tables](./static/001n-save-change.jpg)
 
@@ -66,29 +72,42 @@ Search permission policy `AdministratorAccess` and tick the checkbox.
 
 Go to `Cloud9` console
 ![go to cloud9](./static/002a-to-cloud9.jpg)
+
 Click `Create Environment`
 ![create environment](./static/002b-create-env.jpg)
+
 Choose EC2 instance type. `t3.small` is good enough
 ![choose instance](./static/002c-t3-small.jpg)
+
 Put it in our newly created VPC
 ![set VPC](./static/002d-use-our-vpc.jpg)
+
 Use one of our private subnets
 ![set VPC](./static/002e-use-private-subnet.jpg)
+
 Click `Create` button
 ![create env](./static/002f-create.jpg)
+
 Once created, click `open`
 ![open env](./static/002g-created.jpg)
+
 It will run the instance
 ![instance running](./static/002h-open-cloud9.jpg)
+
 Back to the `cloud9` console, click name to see detail page
 ![cloud9 page](./static/002g-created.jpg)
+
 Click `Manage EC2 Instance`
 ![manage ec2 instance](./static/002i-open-cloud9-detail.jpg)
+
 New tab to `EC2` will be opened, click the checkbox
 ![select ec2](./static/002j-in-ec2-console.jpg)
+
 Select from dropdown menu `Action` -> `Security` -> `Modify IAM Role`
 ![modify iam role](./static/002k-modify-iam-role.jpg)
+
 Select IAM role we just created in previous step from dropdown menu.
 ![select iam role](./static/002l-update-iam-role.jpg)
+
 Click `Update IAM Role`
 ![update iam role](./static/002m-update-iam-role.jpg)

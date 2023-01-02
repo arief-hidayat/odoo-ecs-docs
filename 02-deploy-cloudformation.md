@@ -14,6 +14,7 @@ cdk bootstrap
 ```
 Open file `odoo-ecs/lib/odoo-ecs-stack.ts `
 ![ecs stack](./static/004b-odoo-ecs-stack.jpg)
+
 Edit email and VPC name. firstTime to `true`
 ```
     const emailAddress = 'mr.arief.hidayat@gmail.com';
@@ -35,8 +36,10 @@ cdk deploy
 ```
 see CloudFormation in progress
 ![cloudformation in progress](./static/004c-cloudformation-in-progress.jpg)
+
 First time setup will take longer time for Database
 ![rds](./static/004d-rds-in-progress.jpg)
+
 Wait until completed
 ![complete](./static/004e-cloudformation-output.jpg)
 

@@ -19,30 +19,43 @@ Search permission policy `AdministratorAccess` and tick the checkbox.
 
 Go to `Cloud9` console
 ![go to cloud9](./static/002a-to-cloud9.jpg)
+
 Click `Create Environment`
 ![create environment](./static/002b-create-env.jpg)
+
 Choose EC2 instance type. `t3.small` is good enough
 ![choose instance](./static/002c-t3-small.jpg)
+
 Put it in our newly created VPC
 ![set VPC](./static/002d-use-our-vpc.jpg)
+
 Use one of our private subnets
 ![set VPC](./static/002e-use-private-subnet.jpg)
+
 Click `Create` button
 ![create env](./static/002f-create.jpg)
+
 Once created, click `open`
 ![open env](./static/002g-created.jpg)
+
 It will run the instance
 ![instance running](./static/002h-open-cloud9.jpg)
+
 Back to the `cloud9` console, click name to see detail page
 ![cloud9 page](./static/002g-created.jpg)
+
 Click `Manage EC2 Instance`
 ![manage ec2 instance](./static/002i-open-cloud9-detail.jpg)
+
 New tab to `EC2` will be opened, click the checkbox
 ![select ec2](./static/002j-in-ec2-console.jpg)
+
 Select from dropdown menu `Action` -> `Security` -> `Modify IAM Role`
 ![modify iam role](./static/002k-modify-iam-role.jpg)
+
 Select IAM role we just created in previous step from dropdown menu.
 ![select iam role](./static/002l-update-iam-role.jpg)
+
 Click `Update IAM Role`
 ![update iam role](./static/002m-update-iam-role.jpg)
 
@@ -50,6 +63,7 @@ Click `Update IAM Role`
 
 disabling AWS managed temporary credentials for Cloud9
 ![no aws managed creds](./static/004a-no-managed-temporary-creds.jpg)
+
 To ensure temporary credentials aren’t already in place we will remove any existing credentials file.
 ```
 rm -vf ${HOME}/.aws/credentials
