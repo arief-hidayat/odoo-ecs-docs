@@ -1,16 +1,9 @@
-# CONTAINERIZED ODOO on AWS
-
-## Context
-
-We are going to deploy Odoo container on AWS ECS (Elastic Container Services).
-
-Here's the architecture.
-
-![architecture](./static/architecture.png)
-
-We'll focus on container with DB access in private subnet exposed via load balancer.
 
 ## Setup
+
+In this section, we will setup VPC and other related resources manually.
+
+We will show other approach using IaaC later.
 
 ### Create VPC and more
 
