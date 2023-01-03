@@ -55,6 +55,8 @@ Wait until completed
 
 ### Verify
 
+#### Login to Odoo
+
 Go to `Secrets Manager`
 
 ![to sm](./static/005a-to-secret-manager.jpg)
@@ -64,9 +66,37 @@ Click `odoo-dev-app-pwd`, scroll down a bit and click `Retrieve Secret Value`.
 ![odoo-dev-app-pwd](./static/005b-odoo-dev-app-pwd.jpg)
 
 Open Odoo URL from CloudFormation output `OdooEcsStack.odooLoadBalancer` and login using email and password from the secret.
+
 ![odoo login](./static/005c-login-to-odoo.jpg)
 
 Now we are logged into Odoo
+
 ![odoo logged in](./static/005d-logged-in.jpg)
+
+#### Login to PgAdmin
+
+Open PgAdmin URL
+
+![open pgadmin](./static/006a-open-pgadmin.jpg)
+
+Login with credentials stored in `pgadmin-dev-creds`
+
+![login pgadmin](./static/006b-logged-in-pgadmin.jpg)
+
+Register server
+
+![register server](./static/006c-register-server.jpg)
+
+Enter RDS credentials stored in `my-service-dev-admin-credentials`
+
+![enter rds creds](./static/006d-enter-rds-credential.jpg)
+
+Now we are connected to RDS
+
+![connected to rds](./static/006e-connected-to-rds.jpg)
+
+
+
+
 
 
