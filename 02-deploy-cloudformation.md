@@ -52,3 +52,21 @@ Wait until completed
 
 ![complete](./static/004e-cloudformation-output.jpg)
 
+
+### Verify
+
+Go to `Secrets Manager`
+
+![to sm](./static/005a-to-secret-manager.jpg)
+
+Click `odoo-dev-app-pwd`, scroll down a bit and click `Retrieve Secret Value`.
+
+![odoo-dev-app-pwd](./static/005b-odoo-dev-app-pwd.jpg)
+
+Open Odoo URL from CloudFormation output `OdooEcsStack.odooLoadBalancer` and login using email and password from the secret.
+![odoo login](./static/005c-login-to-odoo.jpg)
+
+Now we are logged into Odoo
+![odoo logged in](./static/005d-logged-in.jpg)
+
+
