@@ -88,6 +88,12 @@ To ensure temporary credentials aren’t already in place we will remove any exi
 rm -vf ${HOME}/.aws/credentials
 ```
 
+
+the following script needs jq
+```
+sudo yum install jq
+```
+
 We should configure our aws cli with our current region as default.
 
 ```
